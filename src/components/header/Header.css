@@ -1,0 +1,46 @@
+#header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    height: 6.6em;
+    align-items: end;
+}
+
+#logo {
+    color: white;
+    border-radius: 10px;
+    font-family: 'Ephesis', cursive;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 40px;
+    width: 10rem;
+    height: 100%;
+}
+
+#profile {
+    border: 1px solid black;
+    width: 10rem;
+    height: 100%;
+}
+
+#menu {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#menu li {
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition-delay: 0s;
+    cursor: pointer;
+}
+
+#menu li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgb(241, 237, 237);
+    transition-delay: 0.2s;
+
+}
