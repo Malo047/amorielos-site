@@ -1,0 +1,23 @@
+#introMain{
+    height: 55rem;
+    display: grid;
+    grid-template-areas: "imageIntro textIntro";
+    align-items: center;
+    background: url('/images/background-intro.png') no-repeat;
+    background-size: cover;
+}
+#imageIntro{
+    grid-area: imageIntro;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+}
+#textIntro{
+    grid-area: textIntro;
+    text-align: justify;
+    max-width: 30rem;
+    line-height: 2.5rem;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}

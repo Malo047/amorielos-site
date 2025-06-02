@@ -7,3 +7,9 @@ a{
     color: black;
     display: inline-block;
 }
+h1{
+    font-family: "Ancizar serif", serif;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+}
