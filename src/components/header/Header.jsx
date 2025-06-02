@@ -11,9 +11,7 @@ const Header = () =>{
                 <li><a href="">ABOUT</a></li>
                 <li><a href="">CONTATO</a></li>
             </ul>
-            <span id="profile">
-                <img src="" alt="" />
-            </span>
+            <span />
         </div>
     )
 }
