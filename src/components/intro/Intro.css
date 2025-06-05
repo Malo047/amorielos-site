@@ -4,6 +4,7 @@
     grid-template-areas: "imageIntro" "textIntro";
     place-items: center;
     background: url("./images/background-intro.png");
+    background-size: cover;
 }
 
 #imageIntro {
