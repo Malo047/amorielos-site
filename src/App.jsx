@@ -8,11 +8,9 @@ import { Intro } from './components/intro/Intro'
 function App() {
   return (
     <>
-      <Header></Header>
+
       <Intro></Intro>
-      <Fashion></Fashion>
-      <About></About>
-      <Contact></Contact>
+
     </>
   )
 }

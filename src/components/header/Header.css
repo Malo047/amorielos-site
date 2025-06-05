@@ -44,3 +44,9 @@
     transition-delay: 0.2s;
 
 }
+@media(max-width: 425px){
+    #header{
+        display: flex;
+        flex-direction: column;
+    }
+}

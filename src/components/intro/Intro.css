@@ -1,4 +1,4 @@
-#introMain{
+#introMain {
     height: 55rem;
     display: grid;
     grid-template-areas: "imageIntro textIntro";
@@ -6,14 +6,16 @@
     background: url('/images/background-intro.png') no-repeat;
     background-size: cover;
 }
-#imageIntro{
+
+#imageIntro {
     grid-area: imageIntro;
     display: flex;
     justify-content: center;
     width: 100%;
     height: 70%;
 }
-#textIntro{
+
+#textIntro {
     grid-area: textIntro;
     text-align: justify;
     max-width: 30rem;
@@ -21,3 +23,35 @@
     margin-left: 2rem;
     font-size: 1.3rem;
 }
+
+@media (max-width: 425px) {
+    #introMain{
+        display: grid;
+        grid-template-areas: "imageIntro" "textIntro";
+        place-items: center;
+        background: url("./images/background-intro.png");
+    }
+    #imageIntro{
+        grid-area: imageIntro;
+        height: 35rem;
+    }
+       #imageIntro img{
+        height: 30rem;
+    }
+    #textIntro{
+        grid-area: textIntro;
+        text-align: center;
+    }
+}
+/*
+@media(max-width: 768px){
+    #imageIntro{
+        width: 40%;
+        height: 50%;
+    }
+    #textIntro{
+        margin-left: -12rem;
+        font-size: 15px;
+        max-width: 20rem;
+    }
+}*/
