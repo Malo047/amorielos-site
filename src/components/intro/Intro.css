@@ -1,52 +1,54 @@
+/* MOBILE (padrão) */
 #introMain {
-    height: 55rem;
     display: grid;
-    grid-template-areas: "imageIntro textIntro";
-    align-items: center;
-    background: url('/images/background-intro.png') no-repeat;
-    background-size: cover;
+    grid-template-areas: "imageIntro" "textIntro";
+    place-items: center;
+    background: url("./images/background-intro.png");
 }
 
 #imageIntro {
     grid-area: imageIntro;
+    height: 35rem;
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 70%;
+}
+
+#imageIntro img {
+    height: 30rem;
 }
 
 #textIntro {
     grid-area: textIntro;
-    text-align: justify;
-    max-width: 30rem;
-    line-height: 2.5rem;
-    margin-left: 2rem;
-    font-size: 1.3rem;
+    text-align: center;
+    line-height: 25px;
 }
 
-@media (max-width: 425px) {
+/* DESKTOP (a partir de 1024px, por exemplo) */
+@media (min-width: 1024px) {
+    #introMain {
+        grid-template-areas: "imageIntro textIntro";
+        height: 55rem;
+        background: url('/images/background-intro.png') no-repeat;
+        background-size: cover;
+        align-items: center;
+    }
+    #textIntro {
+        text-align: justify;
+        max-width: 30rem;
+        line-height: 2.5rem;
+        margin-left: 2rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media(min-width: 768px){
     #introMain{
-        display: grid;
-        grid-template-areas: "imageIntro" "textIntro";
-        place-items: center;
-        background: url("./images/background-intro.png");
+        grid-template-areas: "imageIntro textIntro";
+        background-size: cover;
     }
-    #imageIntro{
-        grid-area: imageIntro;
-        height: 35rem;
-    }
-       #imageIntro img{
-        height: 30rem;
-    }
-    #textIntro{
-        grid-area: textIntro;
-        text-align: center;
-    }
-}
-
-@media(max-width: 768px){
-    #imageIntro{
-        width: 40%;
+    #imageIntro img{
+        margin: auto;
+        width: 100%;
         height: 50%;
     }
     #textIntro{
