@@ -3,7 +3,7 @@ const Fashion = () => {
     return(
         <div id="mainFashion">
             <h1>FASHION</h1>
-            <section>
+            <section id="containerFashion">
                 <div id="section1">
                     <img src="./images/loo1.jpg" alt="Modelo com uma roupa social" />
                     <p>Descubra uma coleção que vai além das tendências — feita para quem quer se destacar

@@ -22,9 +22,10 @@
     grid-area: textIntro;
     text-align: center;
     line-height: 25px;
+    margin-bottom: 5rem;
 }
 
-/* DESKTOP (a partir de 1024px, por exemplo) */
+/* DESKTOP*/
 @media (min-width: 1024px) {
     #introMain {
         grid-template-areas: "imageIntro textIntro";
@@ -41,7 +42,7 @@
         font-size: 1.3rem;
     }
 }
-
+/*TABLET*/
 @media(min-width: 768px){
     #introMain{
         grid-template-areas: "imageIntro textIntro";

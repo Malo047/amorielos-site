@@ -10,7 +10,7 @@ function App() {
     <>
 
       <Intro></Intro>
-
+      <Fashion></Fashion>
     </>
   )
 }

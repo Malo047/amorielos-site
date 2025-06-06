@@ -1,4 +1,105 @@
-#mainFashion{
+/*MOBILE PADRÂO*/
+    #mainFashion {
+    display: grid;
+    grid-template-areas: "imageIntro" "textIntro";
+    place-items: center;
+    background: url("./images/background-fashion.png");
+    background-size: cover;
+    padding-top: 5rem;
+}
+#section1, #section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#section1 img{
+    width: 80%;
+    height: 80%;
+    margin: 2rem 0;
+}
+#section1 p, #section2 p{
+    max-width: 20rem;
+    line-height: 25px;
+    margin-bottom: 3rem;
+}
+#section2 img{
+    width: 80%;
+    margin: 2rem 0;
+}
+
+/*TABLET*/
+@media(min-width:768px){
+    #containerFashion{
+        display: grid;
+        grid-template-areas: "section1""section2";
+    }
+    #section1, #section2{
+        grid-area: section1;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #section1 img, #section2 img{
+        width: 35%;
+    }
+    #section2{
+        grid-area: section2;
+        flex-direction: row;
+    }
+}
+/*DESKTOP*/
+    @media(min-width: 1024px){
+    #mainFashion{
+    height: 61rem;
+    background: url("/images/background-fashion.png") no-repeat;
+    background-size: cover;
+}
+#mainFashion h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 2rem;
+    text-decoration: underline;
+}
+#mainFashion section{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-areas: "section1"
+                         "section2";
+    height: 40rem;
+}
+#section1{
+    border: 1px solid #000000;
+    grid-area: section1;
+    display: flex;
+    align-items: center;
+    width: 38.3rem;
+    position: absolute;
+    left: 0;
+}
+#section2{
+    border: 1px solid #000000;
+    grid-area: section2;
+    display: flex;
+    align-items: center;
+    width: 38.3rem;
+    position: absolute;
+    right: 0;
+    margin-top: 20rem;
+}
+
+#section1, #section2{
+    height: 20rem;
+    overflow: hidden;
+}
+#section1 p, #section2 p{
+    max-width: 25rem;
+    margin-left: 5rem;
+    font-size: 15px;
+}
+ }
+
+ /*DESKTOP FULL*/
+ @media(min-width: 1226px){
+    #mainFashion{
     height: 61rem;
     background: url("/images/background-fashion.png") no-repeat;
     background-size: cover;
@@ -14,29 +115,17 @@
     display: grid;
     grid-template-areas: "section1 ."
                          ". section2";
-    height: 52rem;
-}
-#section1{
-    border: 1px solid #000000;
-    grid-area: section1;
-    display: flex;
-    align-items: center;
-}
-#section2{
-    border: 1px solid #000000;
-    grid-area: section2;
-    display: flex;
-    align-items: center;
-}
-#section2 img{
-    height: 100%;
+    position: static;
+    width: 100%;
 }
 #section1, #section2{
-    height: 25rem;
-    overflow: hidden;
+    width: 50%;
+}
+#section1 img, #section2 img{
+    width: 30%;
+    margin-left: 5rem;
 }
 #section1 p, #section2 p{
-    max-width: 25rem;
-    margin-left: 5rem;
-    font-size: 20px;
+    margin-right: 5rem;
 }
+ }
