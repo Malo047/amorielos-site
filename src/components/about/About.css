@@ -1,40 +1,58 @@
-#mainAbout{
-    height: 61rem;
+/*MOBILE PADRÃO*/
+ #mainAbout{
     background: url("/images/background-about.png") no-repeat;
     background-size: cover;
     color: white;
+    padding: 10%;
+ }
+ #mainAbout h1{
     text-align: center;
-}
-#mainAbout h1{
     text-decoration: underline;
-    padding-top: 3rem;
-}
-#aboutContainer{
-    display: grid;
-    grid-template-areas: " textAbout imageAbout";
-    height: 52rem;
-}
-#textAbout{
-    grid-area: textAbout;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 65rem;
-}
-#textAbout p{
-    max-width: 30rem;
-    font-size: 18px;
-    line-height: 25px;
-    padding: 2rem 4rem ;
+    margin-bottom: 2rem;
+ }
+ #mainAbout p{
+    text-align: left;
+    margin-bottom: 5rem;
+ }
+ #imageAbout img{
+    width: 100%;
     border: 2px solid white;
     border-radius: 10px;
-}
-#imageAbout{
-    grid-area: imageAbout;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+ }
+
+@media(min-width: 768px){
 #imageAbout img{
-    width: 70%;
+    width: 80%;
+    margin-left: 10%;
+}   
+}
+/*DESKTOP*/
+@media(min-width:1024px){
+    #aboutContainer{
+        display: flex;
+        align-items: center;
+    }
+    #textAbout{
+        width: 150%;
+        margin-top: 5rem;
+    }
+}
+/*DESKTOP FULL*/
+@media(min-width: 1226px){
+    #aboutContainer{
+        display: flex;
+        align-items: center;
+        margin-top: 5rem;
+        line-height: 25px;
+    }
+    #textAbout{
+        width: 60%;
+    }
+    #imageAbout{
+        display: flex;
+        justify-content: center;
+    }
+    #imageAbout img{
+        width: 50%;
+    }
 }
