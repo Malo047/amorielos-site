@@ -11,6 +11,7 @@ function App() {
 
       <Intro></Intro>
       <Fashion></Fashion>
+      <About></About>
     </>
   )
 }
