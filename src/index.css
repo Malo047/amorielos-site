@@ -2,6 +2,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Manrope', sans-serif;
+    scroll-behavior: smooth;
 }
 a{
     color: black;
