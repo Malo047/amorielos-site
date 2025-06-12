@@ -10,9 +10,10 @@ const Contact = () => {
                     <p>Você pode estar entrando em contato com a gente
                         por meio de nossos canais oficiais! <br />
                         Entre no nosso grupo do WhatsApp e fique por 
-                        dentro de nossas promoções e sorteios. <br />
+                        dentro de nossas promoções e sorteios. <br /><br />
                         VENHA CONFERIR
                     </p>
+                    <br />
                    <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
                    <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
                    <a href="www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
